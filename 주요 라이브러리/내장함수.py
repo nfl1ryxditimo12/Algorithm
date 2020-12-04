@@ -11,28 +11,36 @@
 
 # 내장함수
 
-result1 = sum([1, 2, 3, 4, 5])  # 총합 구하는 함수 sum
+# 총합 구하는 함수 sum
+result1 = sum([1, 2, 3, 4, 5])
 print(result1)
 
-result2 = min(7, 3, 5, 2)  # 최솟값 구하는 함수 min
+# 최솟값 구하는 함수 min
+result2 = min(7, 3, 5, 2)
 print(result2)
 
-result3 = max(7, 3, 5, 2)  # 최대값 구하는 함수 max
+# 최대값 구하는 함수 max
+result3 = max(7, 3, 5, 2)
 print(result3)
 
-result4 = eval("(3+5)*7")  # 수학 수식이 문자열 형식으로 들어오면 계산한 결과를 반환하는 함수 eval
+# 수학 수식이 문자열 형식으로 들어오면 계산한 결과를 반환하는 함수 eval
+result4 = eval("(3+5)*7")
 print(result4)
 print(type(result4))
 
-result5 = sorted([9, 1, 8, 5, 4])  # 오름차순으로 정렬
+# 오름차순으로 정렬
+result5 = sorted([9, 1, 8, 5, 4])
 print(result5)
-result5 = sorted([9, 1, 8, 5, 4], reverse=True)  # 내림차순으로 정렬
+
+# 내림차순으로 정렬
+result5 = sorted([9, 1, 8, 5, 4], reverse=True)
 print(result5)
 
 # 두번째 원소를 기준으로 내림차순 한다면 밑의 방식으로 사용할 수 있다.
 result6 = sorted([('홍길동', 35), ('이순신', 75), ('아무개', 50)], key=lambda x: x[1], reverse=True)
 print(result6)
 
-data = [9,1,8,5,4] # 리스트와 같은 객체는 기본적으로 sort() 함수를 내재하고 있어 굳이 sorted() 함수를 사용하지 않아도 된다
+# 리스트와 같은 객체는 기본적으로 sort() 함수를 내재하고 있어 굳이 sorted() 함수를 사용하지 않아도 된다
+data = [9,1,8,5,4]
 data.sort()
 print(data)
